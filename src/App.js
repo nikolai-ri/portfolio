@@ -30,7 +30,7 @@ function App() {
             <div className="row d-flex align-items-center">
                 <a href='mailto:nikolai.riedel@gmail.com'><img className='followLogos'
                         src={emailLogo} alt='Email' title='Email' /></a>
-                <a href='https://linkedin.com/in/nikolairiedel/'><img className='followLogos'
+                <a href='https://no.linkedin.com/in/nikolairiedel'><img className='followLogos'
                         src={linkedinLogo} alt='LinkedIn profile' title='Linkedin profile' /></a>
                 <a href="https://github.com/nikolairiedel"><img className="followLogos" src={github}
                         alt="GitHub profile" title="GitHub profile" /></a>

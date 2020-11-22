@@ -34,42 +34,42 @@ export default class Resume extends Component {
                 <div className="skillsRow">
                     <ResumeTitle icon={skillsIcon} alt="Skills icon" title="SKILLS" />  
                     <div className="row border-top">
-                        <div class={constResponsiveClassesSkills}>
+                        <div className={constResponsiveClassesSkills}>
                             <Skills skillTitle="General:" skills={[
-                                {name: "Physics", percentage: "99", startColor: "#124050", endColor: "#9dd2da"},
-                                {name: "Analytics", percentage: "75", startColor: "#124050", endColor: "#9dd2da"},
-                                {name: "Statistics", percentage: "75", startColor: "#124050", endColor: "#9dd2da"},
-                                {name: "IT management", percentage: "50", startColor: "#124050", endColor: "#9dd2da"}
+                                {key:"genOne", name: "Physics", percentage: "99", startColor: "#124050", endColor: "#9dd2da"},
+                                {key:"genTwo", name: "Analytics", percentage: "75", startColor: "#124050", endColor: "#9dd2da"},
+                                {key:"genThree", name: "Statistics", percentage: "75", startColor: "#124050", endColor: "#9dd2da"},
+                                {key:"genFour", name: "IT management", percentage: "50", startColor: "#124050", endColor: "#9dd2da"}
                             ]
                             } 
                             />
                         </div>
-                        <div class={constResponsiveClassesSkills}>
+                        <div className={constResponsiveClassesSkills}>
                             <Skills skillTitle="Development:" skills={[
-                                {name: "Java / JavaScript", percentage: "75", startColor: "#1ba450", endColor: "#9eb8aa"},
-                                {name: "CSS / HTML", percentage: "75", startColor: "#1ba450", endColor: "#9eb8aa"},
-                                {name: "Python / C", percentage: "25", startColor: "#1ba450", endColor: "#9eb8aa"},
-                                {name: "R / LateX / LabView", percentage: "25", startColor: "#1ba450", endColor: "#9eb8aa"},
+                                {key:"devOne", name: "Java / JavaScript", percentage: "75", startColor: "#1ba450", endColor: "#9eb8aa"},
+                                {key:"devTwo", name: "CSS / HTML", percentage: "75", startColor: "#1ba450", endColor: "#9eb8aa"},
+                                {key:"devThree", name: "Python / C", percentage: "25", startColor: "#1ba450", endColor: "#9eb8aa"},
+                                {key:"devFour", name: "R / LateX / LabView", percentage: "25", startColor: "#1ba450", endColor: "#9eb8aa"},
                             ]
                             } 
                             />
                         </div>
-                        <div class={constResponsiveClassesSkills}>
+                        <div className={constResponsiveClassesSkills}>
                             <Skills skillTitle="Characteristics:" skills={[
-                                {name: "Mediator", percentage: "99", startColor: "#0e93a8", endColor: "#9dd2da"},
-                                {name: "Responsible", percentage: "99", startColor: "#0e93a8", endColor: "#9dd2da"},
-                                {name: "Communication", percentage: "75", startColor: "#0e93a8", endColor: "#9dd2da"},
-                                {name: "Conscientious", percentage: "75", startColor: "#0e93a8", endColor: "#9dd2da"}
+                                {key:"charOne", name: "Mediator", percentage: "99", startColor: "#0e93a8", endColor: "#9dd2da"},
+                                {key:"charTwo", name: "Responsible", percentage: "99", startColor: "#0e93a8", endColor: "#9dd2da"},
+                                {key:"charThree", name: "Communication", percentage: "75", startColor: "#0e93a8", endColor: "#9dd2da"},
+                                {key:"charFour", name: "Conscientious", percentage: "75", startColor: "#0e93a8", endColor: "#9dd2da"}
                             ]
                             } 
                             />
                         </div>
-                        <div class={constResponsiveClassesSkills}>
+                        <div className={constResponsiveClassesSkills}>
                             <Skills skillTitle="Languages:" skills={[
-                                {name: "German", percentage: "99", startColor: "#0e93a8", endColor: "#9dd2da"},
-                                {name: "English (C2)", percentage: "99", startColor: "#0e93a8", endColor: "#9dd2da"},
-                                {name: "Norwegian", percentage: "25", startColor: "#0e93a8", endColor: "#9dd2da"},
-                                {name: "French", percentage: "25", startColor: "#0e93a8", endColor: "#9dd2da"}
+                                {key:"langOne", name: "German", percentage: "99", startColor: "#0e93a8", endColor: "#9dd2da"},
+                                {key:"langTwo", name: "English (C2)", percentage: "99", startColor: "#0e93a8", endColor: "#9dd2da"},
+                                {key:"langThree", name: "Norwegian", percentage: "25", startColor: "#0e93a8", endColor: "#9dd2da"},
+                                {key:"langFour", name: "French", percentage: "25", startColor: "#0e93a8", endColor: "#9dd2da"}
                             ]
                             } 
                             />

@@ -14,7 +14,7 @@ export default class Skills extends Component {
 
     render() {
         const skills = this.state.skills.map((skill) => (
-            <div className="row">
+            <div className="row" key={skill.key}>
                 <div className="col-7">
                     <div className="skillName">{skill.name}</div>
                 </div>
