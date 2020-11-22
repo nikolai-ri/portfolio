@@ -1,0 +1,31 @@
+.workExperienceTitle {
+    color: #383838;
+    font-weight: bold;
+}
+
+.workExperienceCompany {
+    color: #909090;
+}
+
+.workExperienceTasks {
+    color: black;
+}
+
+.experienceEntry {
+    .row {
+        padding: 15px;
+        padding-bottom: 0;
+        font-size: 0.8em;
+
+        @media (max-width: 1199.98px) {
+            font-size: 1em;
+         }
+    }
+
+    .col-8 {
+        div {
+            padding-bottom: 3px;
+        }
+    }
+}
+

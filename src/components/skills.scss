@@ -1,0 +1,19 @@
+#skills {
+    .row {
+        .col-6 {
+            padding: 0;
+        }
+    }
+
+    .skillTitles {
+        padding-bottom: 15px;
+        font-weight: bold;
+        padding-left: 15px;
+        padding-top: 15px;
+    }
+    
+    .skillName {
+        display: inline-block;
+        font-size: 0.8em;
+    }
+}
