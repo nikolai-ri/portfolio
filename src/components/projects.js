@@ -5,9 +5,9 @@ export default class Projects extends Component {
 
     render() {
         return (
-            <div className="projectsContainer row">Coming soon...!
-            <div className="col-12">
-                test
+            <div className="projectsContainer row">
+                <div className="col-12">
+                <p>Coming soon...!</p>
                 </div>
             </div>
         );

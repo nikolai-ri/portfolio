@@ -2,7 +2,8 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Link
 } from "react-router-dom";
 import './App.scss';
 import Nav from 'react-bootstrap/Nav';
@@ -22,9 +23,9 @@ function App() {
       <div className="App">
         <div id="navContainer">
           <Nav className="flex-column justify-content-center p-lg-3">
-            <Nav.Link href="/">Resume</Nav.Link>
-            <Nav.Link href="/projects" eventKey="link-1">Projects</Nav.Link>
-            <Nav.Link href="/impressum" eventKey="link-2">Impressum</Nav.Link>
+            <Nav.Link as={Link} to="/">Resume</Nav.Link>
+            <Nav.Link as={Link} to="/projects" eventKey="link-1">Projects</Nav.Link>
+            <Nav.Link as={Link} to="/impressum" eventKey="link-2">Impressum</Nav.Link>
           </Nav>
           <div className="contactContainer">
             <div className="row d-flex align-items-center">
