@@ -1,9 +1,17 @@
 #wrapperResume {
     #profilePicture {
-        height: 100px;
+        position: relative;
+        top:20px;
+        height: 200px;
+
+        @media (max-width: 768px) {
+            top: 0px;
+         }
     }
     #profileParagraph {
+        font-size: 1.3em;
         padding: 15px 30px;
+        margin-bottom: 0px;
     }
 
     .skillsRow {

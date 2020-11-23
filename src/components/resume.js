@@ -23,7 +23,7 @@ export default class Resume extends Component {
                         </div>
                     </div>
                     <div className="row descriptionRow border-top justify-content-center">
-                        <div className="col col-sm-9 col-12">
+                        <div className="col col-md-9 col-12 d-flex align-items-center">
                             <p id="profileParagraph">Physicist by education, problem solver by heart. I am always trying to learn from others and to improve myself. I am interested in working on and being part of the solution to global issues such as climate change.</p>
                         </div>
                         <div className="col col-lg-3 col-md-3 col-sm-3 col-12 d-flex justify-content-center align-items-center">
@@ -35,31 +35,21 @@ export default class Resume extends Component {
                     <ResumeTitle icon={skillsIcon} alt="Skills icon" title="SKILLS" />  
                     <div className="row border-top">
                         <div className={constResponsiveClassesSkills}>
-                            <Skills skillTitle="General:" skills={[
-                                {key:"genOne", name: "Physics", percentage: "99", startColor: "#124050", endColor: "#9dd2da"},
-                                {key:"genTwo", name: "Analytics", percentage: "75", startColor: "#124050", endColor: "#9dd2da"},
+                            <Skills skillTitle="Core competencies:" skills={[
+                                {key:"genFour", name: "IT management", percentage: "99", startColor: "#124050", endColor: "#9dd2da"},
                                 {key:"genThree", name: "Statistics", percentage: "75", startColor: "#124050", endColor: "#9dd2da"},
-                                {key:"genFour", name: "IT management", percentage: "50", startColor: "#124050", endColor: "#9dd2da"}
+                                {key:"genTwo", name: "Analytics", percentage: "75", startColor: "#124050", endColor: "#9dd2da"},
+                                {key:"genOne", name: "Physics", percentage: "75", startColor: "#124050", endColor: "#9dd2da"},
                             ]
                             } 
                             />
                         </div>
                         <div className={constResponsiveClassesSkills}>
-                            <Skills skillTitle="Development:" skills={[
+                            <Skills skillTitle="Software engineering:" skills={[
                                 {key:"devOne", name: "Java / JavaScript", percentage: "75", startColor: "#1ba450", endColor: "#9eb8aa"},
                                 {key:"devTwo", name: "CSS / HTML", percentage: "75", startColor: "#1ba450", endColor: "#9eb8aa"},
                                 {key:"devThree", name: "Python / C", percentage: "25", startColor: "#1ba450", endColor: "#9eb8aa"},
                                 {key:"devFour", name: "R / LateX / LabView", percentage: "25", startColor: "#1ba450", endColor: "#9eb8aa"},
-                            ]
-                            } 
-                            />
-                        </div>
-                        <div className={constResponsiveClassesSkills}>
-                            <Skills skillTitle="Characteristics:" skills={[
-                                {key:"charOne", name: "Mediator", percentage: "99", startColor: "#0e93a8", endColor: "#9dd2da"},
-                                {key:"charTwo", name: "Responsible", percentage: "99", startColor: "#0e93a8", endColor: "#9dd2da"},
-                                {key:"charThree", name: "Communication", percentage: "75", startColor: "#0e93a8", endColor: "#9dd2da"},
-                                {key:"charFour", name: "Conscientious", percentage: "75", startColor: "#0e93a8", endColor: "#9dd2da"}
                             ]
                             } 
                             />
@@ -74,6 +64,16 @@ export default class Resume extends Component {
                             } 
                             />
                         </div>
+                        <div className={constResponsiveClassesSkills}>
+                            <Skills skillTitle="Characteristics:" skills={[
+                                {key:"charOne", name: "Reliability", percentage: "99", startColor: "#0e93a8", endColor: "#9dd2da"},
+                                {key:"charTwo", name: "Independence", percentage: "99", startColor: "#0e93a8", endColor: "#9dd2da"},
+                                {key:"charThree", name: "Leadership", percentage: "75", startColor: "#0e93a8", endColor: "#9dd2da"},
+                                {key:"charFour", name: "Mediation", percentage: "75", startColor: "#0e93a8", endColor: "#9dd2da"}
+                            ]
+                            } 
+                            />
+                        </div>
                     </div>  
                 </div>
                 <div className="workexperienceRow row">
@@ -81,7 +81,7 @@ export default class Resume extends Component {
                         <ResumeTitle icon={workExperienceIcon} alt="Work experience icon" title="WORK EXPERIENCE" />
                         <ProfileWorkEntry rowClasses="border-top" time="Since 08/2019:" 
                                             company="Norwegian Red Cross, Oslo" 
-                                            title="Tech-Lead, community based surveillance (CBS) project" 
+                                            title="Tech Lead, community based surveillance (CBS) project" 
                                             tasks="Lead of the technical development of an open source CBS platform. Coordination of stakeholders in an interdisciplinary team and international environment."/>
                         <ProfileWorkEntry time="05/2019 - 06/2019:" 
                                             company="Freelance project, University of Innsbruck, Austria" 
