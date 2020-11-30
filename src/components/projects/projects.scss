@@ -1,0 +1,13 @@
+.projectsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .projectsMore {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+}

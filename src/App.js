@@ -9,7 +9,7 @@ import './App.scss';
 import Nav from 'react-bootstrap/Nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Resume from './components/resume'
-import Projects from './components/projects'
+import Projects from './components/projects/projects'
 import Impressum from './components/impressum'
 
 import emailLogo from './assets/connect/email.png'
@@ -41,7 +41,7 @@ function App() {
           </div>
         </div>
 
-        <div className="contentContainer">
+        <div className="contentContainer container-fluid p-0 m-0">
         <Switch>
           <Route path="/projects">
             <Projects />
