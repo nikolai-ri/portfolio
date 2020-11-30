@@ -1,6 +1,5 @@
 import React, { Component } from 'react';   
 import { Link } from "react-router-dom";
-import D3HeatMap from './projectImages/javascript/d3/d3_heatMap.jpg';
 
 export default class ProjectThumbnailComponent extends Component {
 
