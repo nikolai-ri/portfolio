@@ -1,0 +1,70 @@
+.gameWrapper10080, .gameWrapper8050, .gameWrapper5030{
+  height: 100vh;
+}
+
+.topButtonContainer > .d-flex > p {
+  margin: 0px; 
+}
+
+.topButtonContainer {
+  padding: 0px;
+  margin: 0px; 
+}
+
+.topButtonContainer > .d-flex {
+  padding: 0px;
+  margin: 0px; 
+}
+
+.gridWrapper, .gridWrapper5030, .gridWrapper8050, .gridWrapper10080 {
+  position: relative;
+  padding: 0px; 
+}
+
+.gridWrapper5030 {
+  height: 60vh;
+  width: 100vh; 
+}
+
+.gridWrapper8050 {
+  height: 75vh;
+  width: 120vh; 
+}
+
+.gridWrapper10080 {
+  height: 80vh;
+  width: 100vh; 
+}
+
+.component15030, .component05030 {
+  position: absolute;
+  display: inline-block;
+  width: 2vh;
+  height: 2vh; 
+  border: 1px solid black;
+}
+
+.component18050, .component08050 {
+  position: absolute;
+  display: inline-block;
+  width: 1.5vh;
+  height: 1.5vh; 
+  border: 1px solid black;
+}
+
+.component110080, .component010080 {
+  position: absolute;
+  display: inline-block;
+  width: 1vh;
+  height: 1vh; 
+  border: 1px solid black;
+}
+
+.component15030, .component18050, .component110080 {
+  background-color: blue; 
+}
+
+.component05030, .component08050, .component0100800 {
+  background-color: lightgrey; 
+}
+
