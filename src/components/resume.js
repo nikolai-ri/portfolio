@@ -3,7 +3,6 @@ import './resume.scss';
 import ProfileWorkEntry from './profileWorkEntry';
 import ResumeTitle from './resumeTitle';
 import Skills from './skills';
-import strengthsIcon from '../assets/resume/strengthsIcon.jpg';
 import profileIcon from "../assets/resume/profileIcon.jpg";
 import workExperienceIcon from "../assets/resume/workExperienceIcon.jpg";
 import educationIcon from "../assets/resume/educationIcon.jpg";
@@ -27,7 +26,7 @@ export default class Resume extends Component {
                             <p id="profileParagraph">Physicist by education, problem solver by heart. I am always trying to learn from others and to improve myself. I am interested in working on and being part of the solution to global issues such as climate change.</p>
                         </div>
                         <div className="col col-lg-3 col-md-3 col-sm-3 col-12 d-flex justify-content-center align-items-center">
-                            <img src={profilePicture} alt="profile picture" id="profilePicture" />
+                            <img src={profilePicture} alt="Profile" id="profilePicture" />
                         </div>
                     </div>
                 </div>
