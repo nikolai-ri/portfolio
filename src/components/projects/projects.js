@@ -2,12 +2,15 @@ import React, { Component } from 'react';
 import './projects.scss'
 import ProjectThumbnailComponent from './projectThumbnailComponent';
 import {
-    BrowserRouter as Router,
     Switch,
     Route
   } from "react-router-dom";
-import WikipediaLookupComponent from './projects/vanilla/wikipediaLookup/wikipediaLookupComponent';
-import wikiPreview from './projectImages/javascript/vanilla/vanilla_wikipediaLookup.png';
+import WikipediaLookupComponent from './wikipediaLookup/wikipediaLookupComponent';
+import wikiThumbnail from '../../assets/projectImages/wikipediaLookup.png';
+import RandomWalkWrapperComponent from './randomWalk/randomWalkWrapperComponent';
+import randomWalkThumbnail from '../../assets/projectImages/randomWalk.jpg';
+import GameOfLife from './gameOfLife/GameOfLife';
+import gameOfLifeThumbnail from '../../assets/projectImages/react_game_of_life.jpg';
 
 export default class Projects extends Component {
 
@@ -21,8 +24,21 @@ export default class Projects extends Component {
         this.state.galleryItemsArray.push(
             {
                 key: "1",
-                imgSrc: wikiPreview,
-                projectPath: "wikipedia"
+                imgSrc: gameOfLifeThumbnail,
+                projectPath: "gameOfLife",
+                alt: "Thumbnail game of life"
+            },
+            {
+                key: "1",
+                imgSrc: randomWalkThumbnail,
+                projectPath: "randomWalk",
+                alt: 'Thumbnail of a project, which implements a random walk including a graph made with D3, that shows the total travelled distance of all walkers and the Expected Value.'
+            },
+            {
+                key: "2",
+                imgSrc: wikiThumbnail,
+                projectPath: "wikipedia",
+                alt: 'A simple wikipedia lookup application. Type in a search word in english, and it will give you the first two articles. Click on dwell to get a random article'
             }
         )
 
@@ -56,7 +72,7 @@ export default class Projects extends Component {
                                                     'projectImages/javascript/vanilla/vanilla_randomWalk.jpg',
                                                     'code',
                                                     'javascript_vanilla',
-                                                    'Thumbnail of a project, which implements a random walk including a graph made with D3, that shows the total travelled distance of all walkers and the Expected Value.',
+                                                    ,
                                                     'An implementation of a random walk written in JavaScript. It includes collision and border collision checks and various control parameters. Below a graph is shown, which was made using D3.js. It shows the total travelled distance of all walkers and the Expected Value of the distribution of the steps taken.',
                                                     'randomWalk'));
         galleryItemsArray.push(new GalleryObject('projects/d3/heatMap/index.html', 
@@ -144,15 +160,21 @@ export default class Projects extends Component {
 
         return (
             <Switch>
-                    <Route path="/projects/wikipedia">
+                <Route path="/projects/wikipedia">
                     <WikipediaLookupComponent />
+                </Route>
+                <Route path="/projects/randomWalk">
+                    <RandomWalkWrapperComponent />
+                </Route>
+                <Route path="/projects/gameoflife">
+                    <GameOfLife />
                 </Route>
                 <Route path="/projects">
                     <div className="projectsContainer d-flex flex-column">
                         <div className="projectsMore">More to be added soon...</div>
                         <div className="row">
                             {this.state.galleryItemsArray.map((project) => (
-                                    <ProjectThumbnailComponent project={project} responsiveClasses={gridResponsiveClasses} projectPath={project.projectPath} imgSrc={project.imgSrc}/>
+                                    <ProjectThumbnailComponent key={project.key} project={project} responsiveClasses={gridResponsiveClasses} projectPath={project.projectPath} imgSrc={project.imgSrc}/>
                             ))
                             }
                         </div>
