@@ -31,3 +31,7 @@ Various actuators in the instrument need to be controlled and spectra taken at t
 
 One notable example is the automatic optimization of the light beam direction. It makes sure, that the light beam is directed in such a way, that it it hits the retro reflector perfectly, to maximize the light coming back. While this is crucial for measuring low concentrations, one can imagine its quite hard to hit a mirror with an approximate diameter of 1 m at a distance of several kilometers, with a light beam of an approximate diameter of 20 cm. 
 The control algorithm moves the light beam through multiple directions in a spiral, thereby pointing it at multiple points in the plane of the retro reflector. It identifies the direction where the intensity of light coupled back into the instrument is highest and moves the light beam to that direction. That way a long autonomous functioning is ensured.
+
+\
+![The device](https://github.com/nikoduesentrieb/portfolio/blob/gh-pages/static/media/the_instrument.e518b98b.jpg?raw=true)
+*The measurement instrument.*

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './projects.scss'
-import ProjectThumbnailComponent from './projectThumbnailComponent';
+import ProjectThumbnailComponent from './projectThumbnailComponent.jsx';
 import {
     Switch,
     Route
@@ -11,8 +11,8 @@ import RandomWalkWrapperComponent from './randomWalk/randomWalkWrapperComponent'
 import randomWalkThumbnail from '../../assets/projectImages/randomWalk.jpg';
 import GameOfLife from './gameOfLife/GameOfLife';
 import gameOfLifeThumbnail from '../../assets/projectImages/react_game_of_life.jpg';
-import CompactLpDoasComponent from './master-thesis-compact-lp-doas/compactLpDoasComponent';
-import lpdoasThumbnail from '../../assets/projectImages/lp-doas/no2mixingratio.jpg';
+import CompactLpDoasComponent from './compact-lp-doas/compactLpDoasComponent';
+import lpdoasThumbnail from '../../assets/projectImages/lp-doas/the_inside.jpg';
 
 export default class Projects extends Component {
 
@@ -27,22 +27,26 @@ export default class Projects extends Component {
             key: "1",
             imgSrc: lpdoasThumbnail,
             projectPath: "compactlpdoas",
-            alt: "Thumbnail compact lp doas"
+            alt: "Thumbnail compact lp doas",
+            caption: "Remote sensing instrument"
         }, {
             key: "2",
             imgSrc: gameOfLifeThumbnail,
             projectPath: "gameOfLife",
-            alt: "Thumbnail game of life"
+            alt: "An implementation of Conways game of life, using react.js and JavaScript. Find more information on the game of life and some cool figures like the glider on https://de.wikipedia.org/wiki/Conways_Spiel_des_Lebens.",
+            caption: "The famous game of life"
         }, {
             key: "3",
             imgSrc: randomWalkThumbnail,
             projectPath: "randomWalk",
-            alt: 'Thumbnail of a project, which implements a random walk including a graph made with D3, that shows the total travelled distance of all walkers and the Expected Value.'
+            alt: 'An implementation of a random walk written in JavaScript. It includes collision and border collision checks and various control parameters. Below a graph is shown, which was made using D3.js. It shows the total travelled distance of all walkers and the Expected Value of the distribution of the steps taken.',
+            caption: 'The Drunkard\'s walk'
         }, {
             key: "4",
             imgSrc: wikiThumbnail,
             projectPath: "wikipedia",
-            alt: 'A simple wikipedia lookup application. Type in a search word in english, and it will give you the first two articles. Click on dwell to get a random article'
+            alt: 'A simple wikipedia lookup application. Type in a search word in english, and it will give you the first two articles. Click on dwell to get a random article.',
+            caption: "Wikipedia in a nutshell..."
         })
 
 
@@ -71,13 +75,6 @@ export default class Projects extends Component {
                                                     'Thumbnail of roguelike chambergame project, using react.js and rot.js.',
                                                     'A roguelike chambergame, using JavaScript, react.js, rot.js, Bootstrap and jQuery. Rules inside!', 
                                                     'roguelike'));
-        galleryItemsArray.push(new GalleryObject('projects/vanilla/randomWalk/index.html',
-                                                    'projectImages/javascript/vanilla/vanilla_randomWalk.jpg',
-                                                    'code',
-                                                    'javascript_vanilla',
-                                                    ,
-                                                    'An implementation of a random walk written in JavaScript. It includes collision and border collision checks and various control parameters. Below a graph is shown, which was made using D3.js. It shows the total travelled distance of all walkers and the Expected Value of the distribution of the steps taken.',
-                                                    'randomWalk'));
         galleryItemsArray.push(new GalleryObject('projects/d3/heatMap/index.html', 
                                                     'projectImages/javascript/d3/d3_heatMap.jpg', 
                                                     'code', 
@@ -106,20 +103,6 @@ export default class Projects extends Component {
                                                     'Thumbnail of an implementation of a calculator.',
                                                     'A calculator made using only HTML, CSS and basic JavaScript. Relies on jQuery.',
                                                     'calculator'));
-        galleryItemsArray.push(new GalleryObject('projects/react/gridgames/build/index.html', 
-                                                    'projectImages/javascript/react/react_game_of_life.jpg', 
-                                                    'code', 
-                                                    'javascript_react',
-                                                    'Thumbnail of an implementation of the game of life, using react.js.', 
-                                                    'An implementation of Conways game of life, using react.js and JavaScript. Find more information on the game of life and some cool figures like the glider on https://de.wikipedia.org/wiki/Conways_Spiel_des_Lebens.',
-                                                    'gridGames'));
-        galleryItemsArray.push(new GalleryObject('projects/vanilla/wikipediaLookup/wiki.html',
-                                                    'projectImages/javascript/vanilla/vanilla_wikipediaLookup.jpg',
-                                                    'code',
-                                                    'javascript_vanilla',
-                                                    'Thumbnail of a project, that can be used as a simple wikipedia lookup application.',
-                                                    'A simple wikipedia lookup application. Type in a search word in english, and it will give you the first two articles. Click on dwell to get a random article',
-                                                    'wikipediaLookup'));
         galleryItemsArray.push(new GalleryObject('projects/d3/geoorthographicMapMeteorite/index.html', 
                                                     'projectImages/javascript/d3/d3_geoorthographic_meteorite_graph.jpg', 
                                                     'code', 
@@ -159,50 +142,38 @@ export default class Projects extends Component {
     }*/
 
     render() {
-        const gridResponsiveClasses = "col-12 col-lg-3 col-md-4 col-sm-6 p-4";
+        const gridResponsiveClasses = "col-12 col-lg-3 col-md-4 col-sm-6 p-5";
 
-        return ( <
-            Switch >
-            <
-            Route path = "/projects/wikipedia" >
-            <
-            WikipediaLookupComponent / >
-            <
-            /Route> <
-            Route path = "/projects/randomWalk" >
-            <
-            RandomWalkWrapperComponent / >
-            <
-            /Route> <
-            Route path = "/projects/gameoflife" >
-            <
-            GameOfLife / >
-            <
-            /Route> <
-            Route path = "/projects/compactlpdoas" >
-            <
-            CompactLpDoasComponent / >
-            <
-            /Route> <
-            Route path = "/projects" >
-            <
-            div className = "projectsContainer d-flex flex-column" >
-            <
-            div className = "projectsMore" > More to be added soon... < /div> <
-            div className = "row" > {
-                this.state.galleryItemsArray.map((project) => ( <
-                    ProjectThumbnailComponent key = { project.key }
-                    project = { project }
-                    responsiveClasses = { gridResponsiveClasses }
-                    projectPath = { project.projectPath }
-                    imgSrc = { project.imgSrc }
-                    />
-                ))
-            } <
-            /div> < /
-            div > <
-            /Route> < /
-            Switch >
+        return (
+            <Switch>
+                <Route path = "/projects/wikipedia" >
+                    <WikipediaLookupComponent />
+                </Route>
+                <Route path = "/projects/randomWalk" >
+                    <RandomWalkWrapperComponent />
+                </Route>
+                <Route path = "/projects/gameoflife" >
+                    <GameOfLife />
+                </Route>
+                <Route path = "/projects/compactlpdoas" >
+                    <CompactLpDoasComponent />
+                </Route>
+                <Route path = "/projects" >
+                        <div className = "projectsContainer d-flex flex-column" >
+                            <div className = "row" > {
+                                            this.state.galleryItemsArray.map((project) => (
+                                                <ProjectThumbnailComponent key={project.key}
+                                                    project={project}
+                                                    responsiveClasses={gridResponsiveClasses}
+                                                    projectPath={project.projectPath}
+                                                    imgSrc={project.imgSrc}
+                                                    caption = {project.caption}/>
+                                            ))
+                                        }
+                            </div> 
+                        </div> 
+                </Route>
+            </Switch>
         );
     }
 }

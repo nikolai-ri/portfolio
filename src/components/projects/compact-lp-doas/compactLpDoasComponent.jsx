@@ -5,6 +5,7 @@ import gfm from 'remark-gfm';
 import markdown from './compactLpDoas.md';
 import no2mixingratio from '../../../assets/projectImages/lp-doas/no2mixingratio.jpg';
 import lpdoasschematic from '../../../assets/projectImages/lp-doas/schematics-lp-doas.jpg';
+import the_instrument from '../../../assets/projectImages/lp-doas/the_instrument.jpg';
 
 export default class CompactLpDoasComponent extends Component {
     
