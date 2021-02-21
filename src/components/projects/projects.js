@@ -4,13 +4,15 @@ import ProjectThumbnailComponent from './projectThumbnailComponent';
 import {
     Switch,
     Route
-  } from "react-router-dom";
+} from "react-router-dom";
 import WikipediaLookupComponent from './wikipediaLookup/wikipediaLookupComponent';
 import wikiThumbnail from '../../assets/projectImages/wikipediaLookup.png';
 import RandomWalkWrapperComponent from './randomWalk/randomWalkWrapperComponent';
 import randomWalkThumbnail from '../../assets/projectImages/randomWalk.jpg';
 import GameOfLife from './gameOfLife/GameOfLife';
 import gameOfLifeThumbnail from '../../assets/projectImages/react_game_of_life.jpg';
+import CompactLpDoasComponent from './master-thesis-compact-lp-doas/compactLpDoasComponent';
+import lpdoasThumbnail from '../../assets/projectImages/lp-doas/no2mixingratio.jpg';
 
 export default class Projects extends Component {
 
@@ -21,26 +23,27 @@ export default class Projects extends Component {
             galleryItemsArray: []
         }
 
-        this.state.galleryItemsArray.push(
-            {
-                key: "1",
-                imgSrc: gameOfLifeThumbnail,
-                projectPath: "gameOfLife",
-                alt: "Thumbnail game of life"
-            },
-            {
-                key: "1",
-                imgSrc: randomWalkThumbnail,
-                projectPath: "randomWalk",
-                alt: 'Thumbnail of a project, which implements a random walk including a graph made with D3, that shows the total travelled distance of all walkers and the Expected Value.'
-            },
-            {
-                key: "2",
-                imgSrc: wikiThumbnail,
-                projectPath: "wikipedia",
-                alt: 'A simple wikipedia lookup application. Type in a search word in english, and it will give you the first two articles. Click on dwell to get a random article'
-            }
-        )
+        this.state.galleryItemsArray.push({
+            key: "1",
+            imgSrc: lpdoasThumbnail,
+            projectPath: "compactlpdoas",
+            alt: "Thumbnail compact lp doas"
+        }, {
+            key: "2",
+            imgSrc: gameOfLifeThumbnail,
+            projectPath: "gameOfLife",
+            alt: "Thumbnail game of life"
+        }, {
+            key: "3",
+            imgSrc: randomWalkThumbnail,
+            projectPath: "randomWalk",
+            alt: 'Thumbnail of a project, which implements a random walk including a graph made with D3, that shows the total travelled distance of all walkers and the Expected Value.'
+        }, {
+            key: "4",
+            imgSrc: wikiThumbnail,
+            projectPath: "wikipedia",
+            alt: 'A simple wikipedia lookup application. Type in a search word in english, and it will give you the first two articles. Click on dwell to get a random article'
+        })
 
 
     }
@@ -158,29 +161,48 @@ export default class Projects extends Component {
     render() {
         const gridResponsiveClasses = "col-12 col-lg-3 col-md-4 col-sm-6 p-4";
 
-        return (
-            <Switch>
-                <Route path="/projects/wikipedia">
-                    <WikipediaLookupComponent />
-                </Route>
-                <Route path="/projects/randomWalk">
-                    <RandomWalkWrapperComponent />
-                </Route>
-                <Route path="/projects/gameoflife">
-                    <GameOfLife />
-                </Route>
-                <Route path="/projects">
-                    <div className="projectsContainer d-flex flex-column">
-                        <div className="projectsMore">More to be added soon...</div>
-                        <div className="row">
-                            {this.state.galleryItemsArray.map((project) => (
-                                    <ProjectThumbnailComponent key={project.key} project={project} responsiveClasses={gridResponsiveClasses} projectPath={project.projectPath} imgSrc={project.imgSrc}/>
-                            ))
-                            }
-                        </div>
-                    </div>
-                </Route>
-            </Switch>
+        return ( <
+            Switch >
+            <
+            Route path = "/projects/wikipedia" >
+            <
+            WikipediaLookupComponent / >
+            <
+            /Route> <
+            Route path = "/projects/randomWalk" >
+            <
+            RandomWalkWrapperComponent / >
+            <
+            /Route> <
+            Route path = "/projects/gameoflife" >
+            <
+            GameOfLife / >
+            <
+            /Route> <
+            Route path = "/projects/compactlpdoas" >
+            <
+            CompactLpDoasComponent / >
+            <
+            /Route> <
+            Route path = "/projects" >
+            <
+            div className = "projectsContainer d-flex flex-column" >
+            <
+            div className = "projectsMore" > More to be added soon... < /div> <
+            div className = "row" > {
+                this.state.galleryItemsArray.map((project) => ( <
+                    ProjectThumbnailComponent key = { project.key }
+                    project = { project }
+                    responsiveClasses = { gridResponsiveClasses }
+                    projectPath = { project.projectPath }
+                    imgSrc = { project.imgSrc }
+                    />
+                ))
+            } <
+            /div> < /
+            div > <
+            /Route> < /
+            Switch >
         );
     }
 }

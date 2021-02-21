@@ -1,0 +1,12 @@
+#compact-lp-doas-article-wrapper {
+    display: flex;
+    justify-content: center;
+    #compact-lp-doas-article {
+        max-width: 1000px;
+        margin-top: 50px;
+        img {
+            width: 80%;
+            margin: 0 10%;
+        }
+    }
+}
