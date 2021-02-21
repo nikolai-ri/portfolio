@@ -1,5 +1,6 @@
-# A compact longpath differential optical absorption spectrometer
+# Building a compact & autonomous long-path DOAS
 
+\
 The graph below shows the variation of the nitrogen dioxide (NO2) mixing ratio in the atmopshere over a day. The mixing ratio is a measure of the concentration of a trace gas in the atmosphere. The ratio is measured above a well used street. 
 
 Nitrogen oxides (NO & NO2) are poissonous to humans and were at the center of the diesel scandal.
