@@ -7,7 +7,7 @@ Nitrogen oxides (NO & NO2) are poissonous to humans and were at the center of th
 The graph shows a pronounced peak in the morning between 6 and 10 AM. This can likely be attributed to commuters traffic, since combustion engines are one of the main sources of nitrogen oxides.
 
 \
-![No2 mixing ratio](https://github.com/nikoduesentrieb/portfolio/blob/gh-pages/static/media/no2mixingratio.63797f17.jpg)
+![No2 mixing ratio](https://github.com/nikoduesentrieb/portfolio/blob/gh-pages/static/media/no2mixingratio.63797f17.jpg?raw=true)
 *NO2 Mixing ratio over a day. Every black square is one measurement. The 2σ error bars are not visible on this scale. The brown bars are indicative of the amount of commuter traffic as measured from other sources. The lower amounts of NO2 in the afternoon are probably due to higher photolysis.*
 
 \
@@ -18,7 +18,7 @@ DOAS compares a spectra of a light source before and after the light travelled t
 The picture below shows a schematic of the instrument.
 
 \
-![Schematic of the compact long-path DOAS instrument](https://github.com/nikoduesentrieb/portfolio/blob/gh-pages/static/media/schematics-lp-doas.1124f459.jpg)
+![Schematic of the compact long-path DOAS instrument](https://github.com/nikoduesentrieb/portfolio/blob/gh-pages/static/media/schematics-lp-doas.1124f459.jpg?raw=true)
 *A spectrograph, a telescope, LEDs, stepper motors, air filtering, temperature stabilization an Arduino based electornics controller and an embedded PC are integrated into a ~ 35 cm wide box. The LEDs are coupled into the telescope via a fiber bundle. Moving the fiber bundle in front of the main mirror of the telescope allows to direct the light path to a retro reflector mirror.*
 
 \
