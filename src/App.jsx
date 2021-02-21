@@ -9,7 +9,7 @@ import './App.scss';
 import Nav from 'react-bootstrap/Nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Resume from './components/resume'
-import Projects from './components/projects/projects'
+import Projects from './components/projects/projects.jsx'
 import Impressum from './components/impressum'
 
 import emailLogo from './assets/connect/email.png'
