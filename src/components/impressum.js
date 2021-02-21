@@ -17,8 +17,8 @@ export default class Impressum extends Component {
                 <p>
                 <strong>E-Mail:</strong> <a href="mailto:nikolai.riedel@gmail.com">nikolai.riedel@gmail.com</a>
                 </p>
-                <p style={{marginTop: '15px'}}>Quelle: Erstellt mit dem <a title="Impressum Generator von firmenwebseiten.at" href="https://www.firmenwebseiten.at/impressum-generator/" target="_blank" rel="follow" style={{textDecoration: 'none'}}>Impressum Generator
-                    von firmenwebseiten.at</a> in Kooperation mit <a href="https://www.servusmode.at" target="_blank" rel="follow" title style={{textDecoration: 'none'}}>servusmode.at</a>
+                <p style={{marginTop: '15px'}}>Quelle: Erstellt mit dem <a title="Impressum Generator von firmenwebseiten.at" href="https://www.firmenwebseiten.at/impressum-generator/" target="_blank" rel="noreferrer"  style={{textDecoration: 'none'}}>Impressum Generator
+                    von firmenwebseiten.at</a> in Kooperation mit <a href="https://www.servusmode.at" target="_blank" rel="noreferrer"  title style={{textDecoration: 'none'}}>servusmode.at</a>
                 </p>
                 <h3 className>EU-Streitschlichtung</h3>
                 <p>Gemäß Verordnung über Online-Streitbeilegung in
@@ -27,7 +27,7 @@ export default class Impressum extends Component {
                 (OS-Plattform) informieren.<br />
                 Verbraucher haben die Möglichkeit, Beschwerden an die
                 Online Streitbeilegungsplattform der Europäischen
-                Kommission unter <a className href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=DE" target="_blank" rel="nofollow">http://ec.europa.eu/odr?tid=221085760</a>
+                Kommission unter <a className href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=DE" target="_blank" rel="noreferrer" >http://ec.europa.eu/odr?tid=221085760</a>
                 zu richten. Die dafür notwendigen Kontaktdaten finden
                 Sie oberhalb in unserem Impressum.</p>
                 <p>Wir möchten Sie jedoch darauf hinweisen, dass wir nicht
@@ -49,7 +49,7 @@ export default class Impressum extends Component {
                 Webseite</h3>
                 <p>Unsere Webseite enthält Links zu anderen Webseiten für
                 deren Inhalt wir nicht verantwortlich sind. Haftung für
-                verlinkte Websites besteht laut <a className href="https://www.ris.bka.gv.at/Dokument.wxe?Abfrage=Bundesnormen&Dokumentnummer=NOR40025813&tid=221085760" target="_blank" rel="noopener nofollow">§ 17 ECG</a> für uns nicht, da wir
+                verlinkte Websites besteht laut <a className href="https://www.ris.bka.gv.at/Dokument.wxe?Abfrage=Bundesnormen&Dokumentnummer=NOR40025813&tid=221085760" target="_blank" rel="noreferrer">§ 17 ECG</a> für uns nicht, da wir
                 keine Kenntnis rechtswidriger Tätigkeiten hatten und
                 haben, uns solche Rechtswidrigkeiten auch bisher nicht
                 aufgefallen sind und wir Links sofort entfernen würden,
@@ -71,8 +71,8 @@ export default class Impressum extends Component {
                 <ul className>
                 <li className>Nikolai Riedel</li>
                 </ul>
-                <p style={{marginTop: '15px'}}>Quelle: Erstellt mit dem <a title="Datenschutz Generator von firmenwebseiten.at" href="https://www.firmenwebseiten.at/datenschutz-generator/" target="_blank" rel="follow" style={{textDecoration: 'none'}}>Datenschutz Generator
-                    von firmenwebseiten.at</a> in Kooperation mit <a href="https://www.elektroautos.co.at" target="_blank" rel="follow" title style={{textDecoration: 'none'}}>elektroautos.co.at</a>
+                <p style={{marginTop: '15px'}}>Quelle: Erstellt mit dem <a title="Datenschutz Generator von firmenwebseiten.at" href="https://www.firmenwebseiten.at/datenschutz-generator/" target="_blank" rel="noreferrer"  style={{textDecoration: 'none'}}>Datenschutz Generator
+                    von firmenwebseiten.at</a> in Kooperation mit <a href="https://www.elektroautos.co.at" target="_blank" rel="noreferrer"  title style={{textDecoration: 'none'}}>elektroautos.co.at</a>
                 </p>
             </div>
         );
